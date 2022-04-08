@@ -1004,3 +1004,6 @@
   # TPM support
   #
 !include OvmfPkg/OvmfTpmComponentsDxe.dsc.inc
+
+DxeRootkitPkg/rootkit/rootkit.inf
+uefi-driver/uefi_driver.inf
