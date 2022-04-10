@@ -1006,4 +1006,5 @@
 !include OvmfPkg/OvmfTpmComponentsDxe.dsc.inc
 
 DxeRootkitPkg/rootkit/rootkit.inf
+DxeRootkitPkg/payload/payload.inf
 uefi-driver/uefi_driver.inf
