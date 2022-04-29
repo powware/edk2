@@ -1005,6 +1005,8 @@
   #
 !include OvmfPkg/OvmfTpmComponentsDxe.dsc.inc
 
-DxeRootkitPkg/RootkitDxe/Rootkit.inf
-DxeRootkitPkg/PayloadDxe/Payload.inf
+DxeRootkitPkg/RootkitDxe/RootkitDxe.inf
+DxeRootkitPkg/PayloadDxe/PayloadDxe.inf
 uefi-driver/uefi_driver.inf
+
+BitLoggerPkg/BitLoggerDxe/BitLoggerDxe.inf
